@@ -17,7 +17,7 @@ def transfer_data():
         rows = source_cursor.fetchall()
 
         if not rows:
-            print('No data to transfer.')
+            print("Can't transfer data because there was no data to transfer in the file.")
             return
 
         print(f'Fetched {len(rows)} rows from the source database.')
